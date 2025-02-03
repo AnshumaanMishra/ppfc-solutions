@@ -43,6 +43,9 @@ min = query[0][0]
 while(sum < m * n):
     for i, element in enumerate(pq):
         current = query[i][element]
+        if(current > max):
+            max = current
+            maxi = i
     sum += 1
 
 print(query)
